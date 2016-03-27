@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class EntradaTeclado 
 {
+	/**INICIALIZAR LA PEDIDA POR TECLADO*/
 	private static Scanner entrada;
 	static
 	{
 		entrada=new Scanner(System.in);
 	}
 
-
+	/**METODO PARA PEDIR UNA CADENA POR TECLADO*/
 	public static String pedirString(String mensaje)
 	{
 		String cadena;
@@ -21,7 +22,7 @@ public class EntradaTeclado
 
 		return cadena;
 	}
-
+	/**METODO PARA PEDIR UN NUMERO ENTERO POR TECLADO*/
 	public static int pedirEntero(String mensaje)
 	{
 		int num=0;
@@ -51,7 +52,7 @@ public class EntradaTeclado
 
 		return num;
 	}
-
+	/**METODO PARA PEDIR UN NUMERO CON DECIMALES POR TECLADO*/
 	public static float pedirFloat(String mensaje)
 	{
 		float num=0;
